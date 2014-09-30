@@ -120,7 +120,7 @@ public class App {
 			if(event.getMonth().equals(month)){
 				if(!initial){
 					ret = event;
-					initial = true;
+					initial = false;
 					continue;
 				}
 				DateTime newDate = event.getDateTime();
