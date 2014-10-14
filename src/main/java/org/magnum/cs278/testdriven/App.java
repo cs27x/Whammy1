@@ -1,15 +1,12 @@
 package org.magnum.cs278.testdriven;
 
 import java.net.URL;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import java.util.Calendar;
-import java.util.Iterator;
-
 import java.util.Collections;
-
+import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 import org.joda.time.DateTime;
 
@@ -233,5 +230,11 @@ public class App {
 			}
 		}
 		return toDo;
+	}
+	
+	public Event getRandomEventThatIsToday() throws Exception {
+		List<Event> eventsToday = this.getTodaysEvents();
+		Random rand = new Random();
+		return eventsToday.get(rand.nextInt(eventsToday.size()));
 	}
 }
