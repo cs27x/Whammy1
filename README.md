@@ -96,7 +96,19 @@ get the code committed without getting a Whammy. There are a couple of rules:
    minute of Whammy attacks (e.g., if you fail at minute 14, the clock is going to be reset
    to zero and you will need to survive 16min of attacks...fail again and it is 17min,
    etc.).
-5. You are free to commit bugs to other teams repos if they pass their tests (any branch
-   is fair game).
+
+## Some Hints to Make Testing/Protecting Your Code Easier
+
+1. Simplify your code as much as possible -- only use the bare minimum in code to implement
+   a given feature
+2. Break your feature implementations up into small units that can be easily tested. Rather
+   than one large method, use a series of smaller methods with simple logic. 
+3. You might want to add OpenPojo to your build (E.g., testCompile("com.googlecode.openpojo:openpojo:0.4.9"))
+   and use it to validate your pojos:
+   https://github.com/cs27x/mobilecloud-template/blob/master/Common/src/test/java/org/magnum/mobilecloud/video/repository/test/PojoTest.java
+4. There is nothing stopping you from coordinating with other teams
+5. Declaring variables that don't change "final" is a good practice to ensure they don't get 
+   accidently modified
+6. The Whammy won't go after code outside of your master branch -- use this to your advantage
    
 __Good Luck!__
