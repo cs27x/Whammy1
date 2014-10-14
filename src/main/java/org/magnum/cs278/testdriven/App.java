@@ -235,6 +235,10 @@ public class App {
 	public Event getRandomEventThatIsToday() throws Exception {
 		List<Event> eventsToday = this.getTodaysEvents();
 		Random rand = new Random();
-		return eventsToday.get(rand.nextInt(eventsToday.size()));
+		int numEvents = eventsToday.size();
+		Event randEvent = null;
+		if (numEvents > 0) 
+			randEvent = eventsToday.get(rand.nextInt(eventsToday.size()));
+		return randEvent;
 	}
 }
