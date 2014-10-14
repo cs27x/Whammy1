@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.magnum.cs278.testdriven.Event;
 
 public class EventTest {
+
 	private Event testEvent = new Event("name", "location", "0", "1", "1/1/2001");
 
 	@Test
