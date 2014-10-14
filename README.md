@@ -92,7 +92,7 @@ get the code committed without getting a Whammy. There are a couple of rules:
 3. Your code must survive at least 15min of continual Whammy attacks - you need to let
    the instructor know when you want to start the clock
 4. Each time you get a Whammy! commit (that will be the commit message), you must create a
-   test that to thwart that attack from the Whammy. You must also survive at least 1 additional
+   test to thwart that attack from the Whammy. You must also survive at least 1 additional
    minute of Whammy attacks (e.g., if you fail at minute 14, the clock is going to be reset
    to zero and you will need to survive 16min of attacks...fail again and it is 17min,
    etc.).
