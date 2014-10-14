@@ -84,7 +84,7 @@ src/test/... code.
 ## Part 1 - Creating New Features
 
 Each team has inherited a set of source code from one of the merged code bases from the
-second in-class exercise. Your team must add 5 additional features to this code base and
+second in-class exercise. Your team must add 1 additional feature to this code base and
 get the code committed without getting a Whammy. There are a couple of rules:
 
 1. All of your code must eventually make its way into the master branch
